@@ -1,0 +1,249 @@
+#root.root {--rvn: #E40A62}
+#root.root {--rmarg: 30px}
+#root.root {--rct: 85%}
+
+.TabsPanel:has(div[data-color="toolbar"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), var(--toolbar-fg));
+}
+
+.TabsPanel:has(div[data-color="blue"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #37adff);
+}
+
+.TabsPanel:has(div[data-color="turquoise"]) {
+  background-color: color-mix(in srgb, transparent var(--rct),  #00c79a);
+}
+
+.TabsPanel:has(div[data-color="green"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #51cd00);
+}
+
+.TabsPanel:has(div[data-color="yellow"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #ffcb00);
+}
+
+.TabsPanel:has(div[data-color="orange"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #ff9f00);
+}
+
+.TabsPanel:has(div[data-color="red"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #ff613d);
+}
+
+.TabsPanel:has(div[data-color="pink"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #ff4bda);
+}
+
+.TabsPanel:has(div[data-color="purple"]) {
+  background-color: color-mix(in srgb, transparent var(--rct), #c071fc);
+}
+
+
+
+
+/* .AnimatedTabList:has(div[data-color="orange"]) {
+  background-color: color-mix(in srgb, transparent 25%, blue);
+}  */
+
+
+
+
+div.bottom-space {
+ display: none;
+}
+
+div.TabsPanel > div:nth-child(4){
+ background-color: transparent;
+}
+
+div.AnimatedTabList div.new-tab-btns {
+background-color: rgba(100,100,100,0.0);
+
+
+}
+
+
+.Tab .ctx { background-color: transparent;
+}
+
+#root.root {--tabs-color-layer-opacity: 0.25;}
+#root.root {--tabs-lvl-opacity: 0.3;}
+
+#root.root {--tabs-activated-color-layer-opacity: 0.25;}#root.root {--frame-el-overlay-selected-border: var(--rvn);}
+#root.root {--toolbar-el-overlay-selected-border: var(--rvn);}
+#root.root {--accent: var(--rvn);}
+#root.root {--tabs-height: var(--rmarg);}
+#root.root {--nav-btn-height: var(--rmarg);}
+#root.root {--nav-btn-width: var(--rmarg);}
+#root.root {--ntb-btn-height: var(--rmarg);}
+#root.root {--bookmarks-bookmark-height: var(--rmarg);}
+#root.root {--bookmarks-folder-height: var(--rmarg);}
+#root.root {--tabs-pinned-width: var(--rmarg);}
+
+#root.root {--tabs-activated-color-layer-opacity: 0.25;}
+#root.root {--tabs-color-layer-opacity: 0.15;}
+#root.root {--tabs-normal-fg: rgb(190, 190, 190);}
+#root.root {--tabs-activated-bg: rgb(32, 32, 32);}
+#root.root {--tabs-progress-bg: rgba(255,255,255,0.086);}
+#root.root {--toolbar-bg: rgba(0, 0, 0, 0);}
+#root.root {--tabs-font: 0.9rem "ibm plex sans condensed";}
+#root.root {--tabs-count-font: 0.5rem "ibm plex mono";}
+#root.root {--ctx-menu-font: 0.75rem "ibm plex mono";}
+
+
+
+
+#root.root {--tabs-activated-fg: rgb(255, 255, 255);}
+
+
+
+
+#root.root {--ntb-border-radius: 0px;}
+#root.root {--slt-border-radius: 0px;}
+
+#root.root {--tooolbar-border-radius: 0px;}
+#root.root {--bottom-bar-height: var(--rmarg);}
+
+
+
+#root.root {--tabs-normal-bg: #2b2b2b5D;}
+
+
+
+
+
+
+
+
+
+
+
+#root.root {--tabs-indent: 12px;}
+#root.root {--tabs-lvl-opacity: 0.3;}
+
+
+
+#root.root {--status-active: #ff0080ff;}
+
+#root.root {--scroll-progress-bg: #ff0000ff;}
+#root.root {--btn-border-radius: 0px;}
+#root.root {--notification-border-radius: 0px;}
+#root.root {--search-height: 30px;}
+
+#root.root {--ctx-menu-border-radius: 0px;}
+#root.root {--tabs-margin: 2px;}
+
+
+#root.root {--tabs-pinned-height: var(--rmarg);}
+
+
+
+#root.root {--frame-el-overlay-hover-bg: rgba(255,255,255,0.086);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#root.root {--d-slow: 0.005s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#root.root {--general-border-radius: 0px;}
+
+
+
+
+
+
+
+
+
+#root.root {--nav-btn-border-radius: 0px;}
+
+#root.root {--ctx-menu-bg: #000000ff;}
+#root.root {--ctx-menu-opt-border-radius: 0px;}
+
+#root.root {--bookmarks-node-activated-fg: #00ffffff;}
+
+@media (max-width: 80px) {
+	.TabsPanel {
+		--tabs-indent: 0px; 
+	}
+}
+
+.TabsPanel .new-tab-btns {
+	padding-right: 0 var(--tabs-margin) !important;
+}
+
+#root .Tab {
+	margin-left: 1.5px !important;
+	margin-right: 1.5px !important;
+}
+
+#new-tab-btn {
+	width: 100% !important;
+}
+
+.NavigationBar {
+	border-radius: 6px !important;
+	margin: 0.3px !important
+	
+}
+
+/* OLD STYLES
+#root.root {--tabs-margin: 2px;}
+#root.root {--tabs-pinned-height: 30px;}
+
+
+
+
+#root.root {--general-border-radius: 10px;}
+
+@media (max-width: 80px) {
+	.TabsPanel {
+		--tabs-indent: 0px; 
+	}
+}
+
+.TabsPanel .new-tab-btns {
+	padding: 0 var(--tabs-margin) !important;
+}
+
+#root .Tab {
+	margin-left: 1.5px !important;
+	margin-right: 1.5px !important;
+}
+
+#new-tab-btn {
+	width: 100% !important;
+}
+
+.NavigationBar {
+	border-radius: 6px !important;
+	margin: 0.3px !important
+	
+}
+*/
